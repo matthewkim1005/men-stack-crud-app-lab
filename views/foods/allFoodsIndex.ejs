@@ -13,7 +13,8 @@
         <% foods.forEach(food => { %>
             <% if (food.isVegetarian === true) { %>
                 <li>
-                    <a href="/foods/<%= food._id %>"> <%= food.name %>: Vegetarian</a>
+                    <a href="/foods/<%= food._id %>"> <%= food.name %></a>
+                    <img class="vegetarian" src="images/leaf.png" alt="Vegetarian" />
                 </li>
             <% } else { %>
                 <li>

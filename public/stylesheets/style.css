@@ -32,11 +32,11 @@ body {
   }
   
   .food-pic {
-    height: 30%;
+    height: 10rem;
   }
 
   .vegetarian {
-    height: 5%;
+    height: 1rem;
   }
 
   a:link {
