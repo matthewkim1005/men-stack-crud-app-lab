@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="/stylesheets/style.css"/>
+</head>
+<body>
+    <%- include('./partials/nav') %>
+    <h1>Edit <%= food.name %></h1>
+    <form action="/foods/<%=food._id%>?_method=PUT" method="POST">
+        <label for="name">Name:</label>
+        <input type="text" name="name" value="<%= food.name %>">
+        <label for="isVegetarian">Vegetarian?</label>
+        <input type="checkbox" name="isVegetarian" <% if (food.isVegetarian) { %>checked<% } %> >
+        <button type="submit">Edit Food</button>
+    </form>
+  </body>
+  
+</html>

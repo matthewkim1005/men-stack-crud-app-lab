@@ -1,0 +1,59 @@
+@import url("https://fonts.googleapis.com/css2?family=DM+Sans:opsz@9..40&display=swap");
+
+body {
+    background:lavender;
+    font-family: "DM Sans", sans-serif;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    max-width: 100vw;
+  }
+  
+  h1 {
+    color: black;
+    font-size: 3.6em;
+    border-width: 2px;
+    border-color: black;
+    border-style: solid;
+    border-radius: 10px;
+    padding: 1em;
+    
+  }
+  
+  footer {
+    font-size: 0.7em;
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    text-align: center;
+    padding: 10px;
+  }
+  
+  .food-pic {
+    height: 30%;
+  }
+
+  .vegetarian {
+    height: 5%;
+  }
+
+  a:link {
+    color: green;
+  }
+  
+  /* visited link */
+  a:visited {
+    color: green;
+  }
+  
+  /* mouse over link */
+  a:hover {
+    color: darkblue;
+  }
+  
+  /* selected link */
+  a:active {
+    color: black;
+  }

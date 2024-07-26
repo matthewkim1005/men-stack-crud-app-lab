@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Foods Index</title>
+    <link rel="stylesheet" href="/stylesheets/style.css"/>
+</head>
+<body>
+    <%- include('./partials/nav') %>
+    <h1>All Foods</h1>
+        <ul>
+        <% foods.forEach(food => { %>
+            <% if (food.isVegetarian === true) { %>
+                <li>
+                    <a href="/foods/<%= food._id %>"> <%= food.name %>: Vegetarian</a>
+                </li>
+            <% } else { %>
+                <li>
+                    <a href="/foods/<%= food._id %>"> <%= food.name %></a>
+                </li>
+            <% } %>
+        <% }); %>
+        </ul>
+</body>
+</html>
